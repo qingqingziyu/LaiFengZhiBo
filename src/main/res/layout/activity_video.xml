@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lk.comecrazy.home.Video.VideoActivity">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/video_paly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:divider="#00000000"
+        android:dividerHeight="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/Collect_Realet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_dt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/detail_bottom_comment" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/collection"
+            android:layout_toRightOf="@+id/btn_dt"
+            android:background="@android:drawable/editbox_background" />
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/et_input"
+            android:background="@android:drawable/editbox_background"
+            android:text="发送" />
+
+        <ImageButton
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/detail_edit_praise_selected" />
+    </RelativeLayout>
+</RelativeLayout>

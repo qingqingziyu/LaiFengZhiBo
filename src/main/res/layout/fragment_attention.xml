@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_attention"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lk.comecrazy.attention.view.AttentionFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/attention_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="关注">
+
+        <RelativeLayout
+            android:layout_gravity="right"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/Collect_delect"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textAllCaps="false"
+                android:text="清除全部"
+                android:drawableLeft="@mipmap/ic_btn_selection_delete"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/attention_Collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/attention_toobar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/attention_content_text"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/bg_no_content" />
+
+        <TextView
+            android:id="@+id/attention_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="你还没有关注任何人哦" />
+
+        <Button
+            android:id="@+id/btn_atttion"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/attention_content_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="#FFC107"
+            android:onClick="HotBtn"
+            android:text="去首页看看" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/attention_toobar" />
+</RelativeLayout>

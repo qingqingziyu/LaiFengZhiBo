@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lk.comecrazy.message.activity.MessageActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/message_toobar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="官方消息"
+        android:background="#fff"
+        app:navigationIcon="@mipmap/gifts_icon_back"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/logo180" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:paddingLeft="10dp"
+            android:text="仅限两天，星座大奖来袭。全新天秤の守护上线，送主播全新星座礼物，还能获得十万花椒币和热门排名，快来参与" />
+    </LinearLayout>
+
+</LinearLayout>

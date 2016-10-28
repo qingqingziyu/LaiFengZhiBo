@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ra_group" />
+
+
+    <RadioGroup
+        android:id="@+id/ra_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/but_home"
+            style="@style/LiveStyle"
+            android:layout_marginTop="5dp"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/but_attention"
+            style="@style/LiveStyle"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/selector_attention"
+            android:text="关注" />
+
+
+        <RadioButton
+            android:id="@+id/but_message"
+            style="@style/LiveStyle"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/selector_message"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/but_myself"
+            style="@style/LiveStyle"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/selector_myself"
+            android:text="我" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image_live"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/lf_home_tab_publish_icon" />
+
+</RelativeLayout>

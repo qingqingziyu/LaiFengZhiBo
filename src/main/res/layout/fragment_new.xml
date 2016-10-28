@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lk.comecrazy.home.view.NewFragment">
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/new_gird"
+        android:numColumns="3"
+        ptr:ptrMode="both"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

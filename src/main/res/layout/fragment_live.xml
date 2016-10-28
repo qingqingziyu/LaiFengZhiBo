@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0000000"
+    tools:context="com.lk.comecrazy.mylive.view.LiveFragment">
+
+
+    <ImageView
+        android:id="@+id/live_back"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/lf_back" />
+
+
+    <ImageView
+        android:id="@+id/live_image_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/live_edit_share"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/lf_bg_user_pager_avatar_default" />
+
+    <EditText
+        android:id="@+id/live_edit_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:hint="一句话描述直播内容，让更多人看到"
+        android:textColorHint="#FFF"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/live_image_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/live_start_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@mipmap/btn_video_share" />
+
+    <Button
+        android:id="@+id/live_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@mipmap/lf_bg_publicnumber_page_default"
+        android:text="开始直播" />
+
+</RelativeLayout>

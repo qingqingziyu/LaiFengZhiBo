@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lf_bg_login"
+    tools:context=".login.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="选择登录方式"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_text_sting">
+
+        <ImageView
+            android:id="@+id/login_image_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@mipmap/lf_ic_login_weixin" />
+
+        <ImageView
+            android:id="@+id/login_image_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@mipmap/lf_ic_login_qq" />
+
+        <ImageView
+            android:id="@+id/login_image_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@mipmap/lf_ic_login_weibo" />
+
+        <ImageView
+            android:id="@+id/login_image_come_crazy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@mipmap/lf_ic_login_laifeng" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_text_sting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="登录即代表你同意来疯服务隐私协议"
+        android:textColor="#fff" />
+</RelativeLayout>

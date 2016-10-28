@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lk.comecrazy.message.activity.ChatRoomActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="来疯客服-小疯"
+        android:background="#fff"
+        app:navigationIcon="@mipmap/gifts_icon_back"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"
+            android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:textAllCaps="false"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

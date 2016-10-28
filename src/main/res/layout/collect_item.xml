@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/Collect_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Collect_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="我是美女"/>
+        <TextView
+            android:id="@+id/Collect_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:textSize="15dp"
+            android:text="我是美女"/>
+    </LinearLayout>
+</LinearLayout>
